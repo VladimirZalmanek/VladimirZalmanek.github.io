@@ -1,1 +1,1 @@
-# VladimirZalmanek.github.io
+minimalistic web for domain: zalmanek.cz
