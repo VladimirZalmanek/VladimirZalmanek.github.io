@@ -10,7 +10,7 @@ body, html {
     background-color: #121212;
 }
 
-.image-container {
+.desktop-content {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,3 +27,46 @@ img {
     max-width: 70%;
     max-height: 70%;
 }
+
+@media (min-width: 601px) {
+    .mobile-content {
+        display: none;
+    }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .desktop-content {
+        display: none;
+    }
+
+    .mobile-content {
+        color: transparent;
+        animation: textFadeIn 3s forwards;
+        font-family: 'Courier New', monospace;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mobile-content a {
+        color: transparent;
+        text-decoration: none;
+        animation: textFadeIn 3s forwards;
+    }
+    
+    .mobile-content a:link, 
+    .mobile-content a:visited, 
+    .mobile-content a:hover, 
+    .mobile-content a:active {
+        color: transparent;
+        text-decoration: none;
+    }
+
+    @keyframes textFadeIn {
+        to {
+            color: white;
+        }
+    }
+}
+
+
