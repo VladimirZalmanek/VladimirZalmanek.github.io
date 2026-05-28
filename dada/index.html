@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Profesionální mobilní masáže u vás doma ve Vsetíně a okolí. Relaxační, sportovní masáže a baňkování. David Žalmánek přijede za vámi s veškerým vybavením." />
+  <meta name="theme-color" content="#3A5A35" />
+  <title>David Žalmánek – Mobilní masáže Vsetín a okolí</title>
+
+  <!-- Favicon – listový motiv -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%233A5A35'/><path d='M16 26V16M16 16C16 16 8 14 7 7C15 5 22 10 16 16Z' stroke='%23C9A96E' stroke-width='1.6' fill='none' stroke-linecap='round'/></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGACE
+══════════════════════════════════════════════════════════ -->
+<header class="nav-header" id="nav-header">
+  <nav class="nav-container" role="navigation" aria-label="Hlavní navigace">
+
+    <a href="#uvod" class="nav-logo" aria-label="David Žalmánek – Mobilní masáže, zpět na úvod">
+      <span class="logo-name">David Žalmánek</span>
+      <span class="logo-sub">Mobilní masáže</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle"
+            aria-label="Otevřít navigaci" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu" role="list">
+      <li><a href="#masaze"          class="nav-link">Masáže</a></li>
+      <li><a href="#o-mne"           class="nav-link">O mně</a></li>
+      <li><a href="#prvni-navsteva"  class="nav-link">První návštěva</a></li>
+      <li><a href="#cenik"           class="nav-link">Ceník</a></li>
+      <li><a href="#kontakt"         class="nav-link nav-cta">Objednat se</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<main>
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════════ -->
+<section class="hero" id="uvod" aria-label="Úvod">
+
+  <!-- Botanická dekorace -->
+  <div class="hero-decor" aria-hidden="true">
+
+    <!-- Levá rostlina (roh vlevo-dole) -->
+    <svg class="hero-plant hero-plant--bl" viewBox="0 0 180 380"
+         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="1.6" stroke-linecap="round">
+        <path d="M90,380 Q86,300 92,210 Q97,145 87,50"/>
+        <path d="M91,340 Q42,315 22,278 Q58,268 90,308"/>
+        <path d="M93,278 Q150,255 168,215 Q130,210 93,255"/>
+        <path d="M90,220 Q44,196 30,158 Q68,156 90,196"/>
+        <path d="M92,168 Q142,150 155,113 Q118,114 92,152"/>
+        <path d="M89,118 Q45,96 40,62 Q74,63 90,98"/>
+        <path d="M91,80 Q132,65 140,33 Q110,35 91,68"/>
+      </g>
+      <g fill="rgba(255,255,255,0.035)">
+        <path d="M91,340 Q42,315 22,278 Q58,268 90,308Z"/>
+        <path d="M93,278 Q150,255 168,215 Q130,210 93,255Z"/>
+        <path d="M90,220 Q44,196 30,158 Q68,156 90,196Z"/>
+        <path d="M92,168 Q142,150 155,113 Q118,114 92,152Z"/>
+      </g>
+    </svg>
+
+    <!-- Pravá rostlina (roh vpravo-nahoře) -->
+    <svg class="hero-plant hero-plant--tr" viewBox="0 0 160 340"
+         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.3" stroke-linecap="round">
+        <path d="M80,340 Q76,265 83,185 Q86,120 78,30"/>
+        <path d="M80,300 Q122,278 140,244 Q108,238 80,272"/>
+        <path d="M81,244 Q46,222 36,188 Q68,186 82,218"/>
+        <path d="M82,190 Q120,172 130,140 Q100,140 82,170"/>
+        <path d="M80,138 Q48,120 42,88 Q72,88 80,118"/>
+      </g>
+    </svg>
+
+    <!-- Valašský hvězdicový ornament -->
+    <svg class="hero-folk-star" viewBox="0 0 100 100"
+         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <polygon points="50,8 61,36 92,36 68,55 77,83 50,65 23,83 32,55 8,36 39,36"
+               fill="rgba(201,169,110,0.22)" />
+      <polygon points="50,22 57,40 78,40 62,52 68,70 50,58 32,70 38,52 22,40 43,40"
+               fill="none" stroke="rgba(201,169,110,0.18)" stroke-width="1"/>
+      <circle cx="50" cy="50" r="8" fill="rgba(201,169,110,0.15)"/>
+      <circle cx="50" cy="50" r="18" fill="none" stroke="rgba(201,169,110,0.12)" stroke-width="1"/>
+      <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(201,169,110,0.08)" stroke-width="1"/>
+    </svg>
+
+  </div>
+
+  <!-- Obsah -->
+  <div class="hero-content">
+    <p class="hero-eyebrow">
+      <span class="eyebrow-gem" aria-hidden="true">◆</span>
+      Vsetín a okolí
+      <span class="eyebrow-gem" aria-hidden="true">◆</span>
+    </p>
+
+    <h1 class="hero-title">
+      Masáže<br>
+      <em>u&nbsp;Vás&nbsp;doma</em>
+    </h1>
+
+    <p class="hero-lead">
+      Přijedu za vámi s veškerým vybavením.<br>
+      Vy jen pohodlně odpočinete.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn--hero">Objednat se</a>
+      <a href="#masaze"  class="btn btn--ghost">Více informací</a>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+      <path d="M12 5v14M6 13l6 6 6-6"
+            stroke="currentColor" stroke-width="1.5" fill="none"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+</section>
+
+<!-- Folk divider: tmavá → světlá -->
+<div class="folk-divider folk-divider--dark" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     MASÁŽE – DRUHY MASÁŽÍ
+══════════════════════════════════════════════════════════ -->
+<section class="section sluzby" id="masaze" aria-labelledby="masaze-title">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-ornament" aria-hidden="true">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆ ◆ ◆</span>
+        <span class="ornament-line ornament-line--r"></span>
+      </div>
+      <h2 class="section-title" id="masaze-title">Druhy masáží</h2>
+      <p class="section-subtitle">
+        Masáže přizpůsobím vašim potřebám – ať hledáte odpočinek,
+        regeneraci po sportu nebo úlevu od napětí.
+      </p>
+    </div>
+
+    <div class="sluzby-grid">
+
+      <!-- Relaxační -->
+      <div class="sluzba-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 28V17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M17 17C17 17 8 15 7 7C15 5 23 11 17 17Z"
+                  stroke="currentColor" stroke-width="1.7" fill="currentColor" fill-opacity="0.12"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 17C17 17 26 13 27 5C19 5 12 11 17 17Z"
+                  stroke="currentColor" stroke-width="1.7" fill="currentColor" fill-opacity="0.08"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 24Q12 21 17 24Q22 27 26 24" stroke="currentColor" stroke-width="1.3"
+                  fill="none" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Relaxační masáž</h3>
+        <p>
+          Pro navození tělesné a duševní pohody. Uvolní napětí, zklidní mysl
+          a pomůže vám načerpat novou energii – přímo v pohodlí vašeho domova.
+        </p>
+      </div>
+
+      <!-- Sportovní -->
+      <div class="sluzba-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 5L14 19H21L13 29" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22" cy="10" r="2.5" stroke="currentColor" stroke-width="1.4" fill="currentColor" fill-opacity="0.1"/>
+            <path d="M10 14Q8 18 10 22" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
+            <path d="M24 22Q26 18 24 14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Sportovní masáž</h3>
+        <p>
+          Před i po sportovním výkonu. Připraví svaly na zátěž nebo urychlí
+          regeneraci, sníží riziko svalové únavy a zkrátí dobu zotavení.
+        </p>
+      </div>
+
+      <!-- Baňkování -->
+      <div class="sluzba-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 21C9 15.477 12.582 11 17 11C21.418 11 25 15.477 25 21"
+                  stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <line x1="7" y1="24" x2="27" y2="24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M14 11C14 9.343 15.343 8 17 8C18.657 8 20 9.343 20 11"
+                  stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity="0.55"/>
+            <path d="M12 17C11.5 15 12 13 13 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+            <path d="M22 17C22.5 15 22 13 21 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+          </svg>
+        </div>
+        <h3>Baňkování</h3>
+        <p>
+          Neohňová metoda se silikono&shy;vými vakuovými baňkami. Přesná regulace
+          intenzity tahu podle vaší citlivosti. Ideální pro uvolnění hlubokých
+          svalových vrstev.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Folk divider: světlá → tmavá -->
+<div class="folk-divider folk-divider--dark" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     ROSTLINNÉ OLEJE
+══════════════════════════════════════════════════════════ -->
+<section class="section oleje" id="oleje" aria-labelledby="oleje-title">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-ornament" aria-hidden="true">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆ ◆ ◆</span>
+        <span class="ornament-line ornament-line--r"></span>
+      </div>
+      <h2 class="section-title" id="oleje-title">Rostlinné oleje</h2>
+      <p class="section-subtitle">
+        K masážím používám výhradně rostlinné oleje ve&nbsp;100&nbsp;% bio&nbsp;kvalitě.
+      </p>
+    </div>
+
+    <div class="oleje-layout">
+
+      <div class="oleje-text">
+        <p>
+          Výběr masážního oleje je pro mě stejně důležitý jako technika masáže samotné.
+          Všechny oleje, které používám, jsou čistě přírodního původu, bez konzervačních
+          a syntetických přísad – pečují o vaši pokožku i po masáži.
+        </p>
+
+        <div class="oleje-bullets">
+          <div class="oleje-bullet">
+            <span class="bullet-dot" aria-hidden="true"></span>
+            <div class="bullet-body">
+              <strong>100 % bio kvalita</strong>
+              <span>Certifikovaně přírodní složení</span>
+            </div>
+          </div>
+          <div class="oleje-bullet">
+            <span class="bullet-dot" aria-hidden="true"></span>
+            <div class="bullet-body">
+              <strong>Bez chemie</strong>
+              <span>Žádná konzervační ani syntetická látka</span>
+            </div>
+          </div>
+          <div class="oleje-bullet">
+            <span class="bullet-dot" aria-hidden="true"></span>
+            <div class="bullet-body">
+              <strong>Hojivé účinky</strong>
+              <span>Hojí, regenerují a vyživují pokožku</span>
+            </div>
+          </div>
+          <div class="oleje-bullet">
+            <span class="bullet-dot" aria-hidden="true"></span>
+            <div class="bullet-body">
+              <strong>Vitamín E</strong>
+              <span>Nejvýznamnější antioxidant v těle</span>
+            </div>
+          </div>
+          <div class="oleje-bullet">
+            <span class="bullet-dot" aria-hidden="true"></span>
+            <div class="bullet-body">
+              <strong>Vhodné pro citlivou pleť</strong>
+              <span>Ideální i při akné a ekzémech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="oleje-card" role="complementary" aria-label="Přírodní oleje">
+        <div class="oleje-card-icon" aria-hidden="true">🌿</div>
+        <h3>Příroda ve své nejčistší podobě</h3>
+        <p>
+          Rostlinné oleje jsou nositeli léčivých látek, vitamínů a mastných kyselin,
+          které pokožka vstřebá přímo při masáži. Žádná umělá vůně, jen čistá příroda.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Folk divider: tmavá → mid -->
+<div class="folk-divider folk-divider--mid" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     O MNĚ
+══════════════════════════════════════════════════════════ -->
+<section class="section o-mne" id="o-mne" aria-labelledby="o-mne-title">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-ornament" aria-hidden="true">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆ ◆ ◆</span>
+        <span class="ornament-line ornament-line--r"></span>
+      </div>
+      <h2 class="section-title" id="o-mne-title">O mně</h2>
+    </div>
+
+    <div class="o-mne-layout">
+
+      <!-- Foto placeholder -->
+      <div class="o-mne-photo" aria-label="Místo pro fotografii Davida Žalmánka">
+        <div class="photo-person-icon" aria-hidden="true">
+          <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="26" r="14" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M10 62C10 49.297 21.193 39 36 39C50.807 39 62 49.297 62 62"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="photo-placeholder-lbl">Foto bude doplněno</p>
+      </div>
+
+      <!-- Textová část -->
+      <div class="o-mne-text">
+        <blockquote>
+          „Masáže jsou pro mě další cestou, jak vám pomoci – tentokrát skrze uvolnění,
+          regeneraci a péči o vaši tělesnou i duševní pohodu."
+        </blockquote>
+
+        <p>
+          Dobrý den, jmenuji se <strong>David Žalmánek</strong>. Narodil jsem se v&nbsp;roce 1977
+          ve Valašském Meziříčí a v&nbsp;současné době žiju v&nbsp;Kateřinicích u&nbsp;Vsetína.
+        </p>
+        <p>
+          Již více než 20 let pomáhám lidem jako profesionální hasič – v&nbsp;prostředí, kde pomoc
+          a&nbsp;důvěra jsou na prvním místě. Tato náročná profese mě naučila hlubokému respektu
+          k&nbsp;lidskému zdraví i&nbsp;k&nbsp;tomu, jak tělo reaguje na extrémní zátěž a&nbsp;stres.
+        </p>
+        <p>
+          Licenci maséra jsem získal v&nbsp;renomované masérské škole
+          <strong>Zázraky duše</strong> v&nbsp;Ostravě v&nbsp;roce 2025.
+        </p>
+
+        <div class="o-mne-badges" role="list" aria-label="Certifikace a zkušenosti">
+          <span class="badge" role="listitem">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 1l1.8 4.2L14 6l-3 3 .7 4.2L8 11l-3.7 2.2L5 9 2 6l4.2-.8L8 1z"
+                    stroke="currentColor" stroke-width="1.2" fill="currentColor" fill-opacity="0.15"/>
+            </svg>
+            Licencovaný masér
+          </span>
+          <span class="badge" role="listitem">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 2C4.686 2 2 4.686 2 8s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6z"
+                    stroke="currentColor" stroke-width="1.2"/>
+              <path d="M5.5 8l1.5 1.5 3-3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Zázraky duše, Ostrava 2025
+          </span>
+          <span class="badge" role="listitem">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 14s-5-3.5-5-7a5 5 0 0110 0c0 3.5-5 7-5 7z"
+                    stroke="currentColor" stroke-width="1.2" fill="currentColor" fill-opacity="0.12"/>
+            </svg>
+            Kateřinice u Vsetína
+          </span>
+          <span class="badge" role="listitem">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 8l2.5 2.5 7-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            20+ let profesionální hasič
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Folk divider: mid → světlá -->
+<div class="folk-divider folk-divider" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     PRVNÍ NÁVŠTĚVA
+══════════════════════════════════════════════════════════ -->
+<section class="section prvni-navsteva" id="prvni-navsteva" aria-labelledby="navsteva-title">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-ornament" aria-hidden="true">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆ ◆ ◆</span>
+        <span class="ornament-line ornament-line--r"></span>
+      </div>
+      <h2 class="section-title" id="navsteva-title">Objednáváte se poprvé?</h2>
+      <p class="section-subtitle">
+        Pár tipů pro vaší první návštěvu, aby vše proběhlo hladce a příjemně.
+      </p>
+    </div>
+
+    <ol class="steps-list" aria-label="Tipy pro první návštěvu">
+
+      <li class="step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <div class="step-body">
+          <strong>Nejezte 2 hodiny před masáží</strong>
+          <span>Plný žaludek by mohl způsobit nepříjemné pocity při masáži břicha
+                a zad – tělu se bude lépe pracovat na lačno.</span>
+        </div>
+      </li>
+
+      <li class="step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <div class="step-body">
+          <strong>Připravte prostor pro masážní stůl</strong>
+          <span>Masér rozloží masážní stůl a potřebuje kolem něj volný prostor
+                pro pohyb. Stačí uvolnit plochu cca 2 × 1,5 m.</span>
+        </div>
+      </li>
+
+      <li class="step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <div class="step-body">
+          <strong>Nastavte si pohodlnou teplotu a vysprchujte se</strong>
+          <span>Teplejší místnost zajistí, že se svaly lépe uvolní. Krátká sprcha
+                před masáží je vítána.</span>
+        </div>
+      </li>
+
+      <li class="step">
+        <span class="step-num" aria-hidden="true">4</span>
+        <div class="step-body">
+          <strong>Stud není na překážku</strong>
+          <span>Pokud si přejete, nechte si na sobě prádlo. Masér odejde z místnosti,
+                než se svléknete, a poté vás přikryje. Vše probíhá s maximálním
+                ohledem na vaše soukromí.</span>
+        </div>
+      </li>
+
+      <li class="step">
+        <span class="step-num" aria-hidden="true">5</span>
+        <div class="step-body">
+          <strong>Po masáži odpočívejte</strong>
+          <span>Vyhněte se alkoholu, kávě a černému čaji. Ovocné a bylinkové čaje
+                jsou v pořádku. Namáhavé aktivity si nechte na druhý den.</span>
+        </div>
+      </li>
+
+    </ol>
+
+  </div>
+</section>
+
+<!-- Folk divider: světlá → mid -->
+<div class="folk-divider folk-divider--mid" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     CENÍK
+══════════════════════════════════════════════════════════ -->
+<section class="section cenik" id="cenik" aria-labelledby="cenik-title">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-ornament" aria-hidden="true">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆ ◆ ◆</span>
+        <span class="ornament-line ornament-line--r"></span>
+      </div>
+      <h2 class="section-title" id="cenik-title">Ceník</h2>
+      <p class="section-subtitle">
+        Základní sazba je&nbsp;<strong>800&nbsp;Kč&nbsp;/ hodina</strong>. Kombinaci partií
+        a délku masáže přizpůsobíme vašim přáním – cena vždy dohodou.
+      </p>
+    </div>
+
+    <div class="cenik-layout">
+
+      <!-- Tabulka orientačních délek -->
+      <div class="cenik-table-wrap">
+        <table class="cenik-table" aria-label="Orientační délka masáže dle partie">
+          <thead>
+            <tr>
+              <th scope="col">Partie</th>
+              <th scope="col">Orientační délka</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Záda</td>
+              <td>cca 45 min</td>
+            </tr>
+            <tr>
+              <td>Šíje + záda</td>
+              <td>cca 60 min</td>
+            </tr>
+            <tr>
+              <td>Horní končetiny</td>
+              <td>cca 40 min</td>
+            </tr>
+            <tr>
+              <td>Dolní končetiny (zepředu)</td>
+              <td>cca 45 min</td>
+            </tr>
+            <tr>
+              <td>Dolní končetiny (zezadu) + hýždě</td>
+              <td>cca 45 min</td>
+            </tr>
+            <tr>
+              <td>Dolní končetiny (obě strany)</td>
+              <td>cca 90 min</td>
+            </tr>
+            <tr>
+              <td><strong>Celková masáž</strong></td>
+              <td><strong>cca 90 min</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Cenové karty -->
+      <div class="cenik-sidebar">
+
+        <div class="price-card price-card--main">
+          <p class="price-label">Základní sazba</p>
+          <p class="price-value">800</p>
+          <p class="price-unit">Kč / hodina</p>
+          <div class="price-sep" aria-hidden="true"></div>
+          <p class="price-note">Platí pro všechny nové i příležitostné klienty.</p>
+        </div>
+
+        <div class="price-card">
+          <p class="price-label">Stálí klienti</p>
+          <p class="price-value">700</p>
+          <p class="price-unit">Kč / hodina</p>
+          <div class="price-sep" aria-hidden="true"></div>
+          <p class="price-note">Věrnostní cena pro pravidelné klienty.</p>
+        </div>
+
+        <div class="price-card price-card--deal">
+          <p class="price-label">🎁 První návštěva</p>
+          <p class="price-value">400</p>
+          <p class="price-unit">Kč / hodina</p>
+          <div class="price-sep" aria-hidden="true"></div>
+          <p class="price-note">
+            Úvodní hodina za poloviční cenu – abyste si mohli v klidu vyzkoušet,
+            zda vám můj styl práce vyhovuje. Platí pouze jednou pro nového klienta.
+          </p>
+        </div>
+
+        <div class="travel-card">
+          <div class="travel-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 2C7.134 2 4 5.134 4 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.866-3.134-7-7-7z"
+                    stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity="0.1"/>
+              <circle cx="11" cy="9" r="2.5" stroke="currentColor" stroke-width="1.3"/>
+            </svg>
+          </div>
+          <div class="travel-body">
+            <strong>Doprava zdarma</strong>
+            <span>Na trase Valašské Meziříčí – Vsetín. Jinam dle dohody.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Folk divider: mid → tmavá -->
+<div class="folk-divider folk-divider--dark" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     KONTAKT / OBJEDNÁVKY
+══════════════════════════════════════════════════════════ -->
+<section class="section kontakt" id="kontakt" aria-labelledby="kontakt-title">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-ornament" aria-hidden="true">
+        <span class="ornament-line"></span>
+        <span class="ornament-diamond">◆ ◆ ◆</span>
+        <span class="ornament-line ornament-line--r"></span>
+      </div>
+      <h2 class="section-title" id="kontakt-title">Objednejte se</h2>
+      <p class="section-subtitle">
+        Zavolejte nebo napište – domluvíme termín, lokalitu a délku masáže
+        přesně podle vašich představ.
+      </p>
+    </div>
+
+    <div class="kontakt-actions">
+      <a href="tel:+420XXXXXXXXX" class="btn btn--phone" aria-label="Zavolat: +420 XXX XXX XXX">
+        <!-- telefon ikona -->
+        <svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true">
+          <path d="M4 3h3l1.5 4-2 1.5c1.1 2.3 2.7 3.9 5 5L13 11l4 1.5v3c0 1.1-.9 1.5-2 1.5C7 17 3 9 3 5c0-1.1.9-2 2-2z"
+                stroke="currentColor" stroke-width="1.4" fill="currentColor" fill-opacity="0.15" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        +420 XXX XXX XXX
+      </a>
+      <a href="mailto:info@masaze-vsetin.cz" class="btn btn--email" aria-label="Napsat e-mail: info@masaze-vsetin.cz">
+        <!-- e-mail ikona -->
+        <svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true">
+          <rect x="2" y="5" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M2 7l8 5 8-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        Napsat e-mail
+      </a>
+    </div>
+
+    <p class="kontakt-hint">
+      Výběr maséra je individuální záležitost. Proto novým klientům nabízím
+      první hodinu za&nbsp;400&nbsp;Kč – přesvědčte se sami.
+    </p>
+
+  </div>
+</section>
+
+<!-- Folk divider: tmavá → nejtemno -->
+<div class="folk-divider folk-divider--dark" aria-hidden="true"
+     style="background-color: var(--clr-forest-deep);"></div>
+
+</main>
+
+<!-- ══════════════════════════════════════════════════════════
+     PATIČKA
+══════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-folk" aria-hidden="true"></div>
+    <p class="footer-logo">David Žalmánek</p>
+    <p class="footer-tagline">Mobilní masáže · Vsetín a okolí</p>
+    <p class="footer-copy">&copy; 2025 David Žalmánek. Všechna práva vyhrazena.</p>
+    <a href="#uvod" class="footer-top" aria-label="Zpět nahoru">
+      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M10 16V4M4 10l6-6 6 6"
+              stroke="currentColor" stroke-width="1.4"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Zpět nahoru
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
